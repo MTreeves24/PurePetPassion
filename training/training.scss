@@ -19,12 +19,12 @@
 }
 
 body{
+  background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.3)), url(../images/background-training-mobile.jpg) no-repeat;
+  background-size: contain;
     font-family: Arial;
     margin:0;
 }
 .container{
-  background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.3)), url(../images/backgroundtraining.jpg) no-repeat fixed;
-  background-size: cover;
   padding:30px 0px 0px 0px;
   height: auto;
 }

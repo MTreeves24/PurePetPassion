@@ -19,8 +19,8 @@
 }
 
 body{
-    background:linear-gradient(rgba(141,153,174,0.7), rgba(141,153,174,0.4)), url(../images/petsitting.jpg) no-repeat fixed;
-    background-size: cover;
+    background:linear-gradient(rgba(141,153,174,0.7), rgba(141,153,174,0.4)), url(../images/background-petsit-mobile.jpg) no-repeat;
+    background-size: contain;
     font-family: Arial;
     margin:0;
 }
@@ -59,8 +59,6 @@ body{
         }
       }
 }
-
-
 .list{
     width: 80%;
     margin:0 auto;
@@ -85,7 +83,6 @@ body{
       }
   }
 }
-
 .prices{
   @include responsive-font(3vw, 10px, 25px, 30px);
   grid-column:2;
@@ -98,7 +95,6 @@ body{
     margin:5px;
   }
 }
-
 
 //CONTACT START//
 #contact{
@@ -229,7 +225,7 @@ body{
 
 @media screen and (min-width: 700px){
   body{
-    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/backgroundpetsitting.jpg) no-repeat fixed;
+    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/background-petsit.jpg) no-repeat fixed;
     background-size: cover;
   }
   .header{

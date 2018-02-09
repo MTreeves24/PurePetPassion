@@ -1,0 +1,115 @@
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  @if $fallback {
+    font-size: $fallback;
+  }
+  font-size: $responsive;
+}
+
+body{
+    font-family: 'Trebuchet MS', serif;
+    line-height: 1.6;
+    background: #ede576;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 2fr auto;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 15px;
+      h1{
+          text-align: center;
+          @include responsive-font(5vw, 15px, 45px, 30px);
+      }
+      img{
+        width: 20vw;
+        max-width: 150px;
+      }
+      .back{
+        text-align: center;
+        padding:10px;
+        text-decoration: none;
+        color: black;
+        background:rgba(1,1,1,0.1);
+        border:1px solid black;
+        box-shadow: 1px 1px 1px black;
+        @include responsive-font(4vw, 15px, 20px, 20px);
+        &:hover{
+          background:rgba(255,255,255,0.1);
+        }
+        .fa-chevron-circle-left{
+          margin-right: 5px;
+        }
+      }
+}
+
+h3 , h4{
+    margin-bottom: 0;
+}
+ol , p , ul{
+    margin-top: 0;
+}
+
+ul.tabs{
+    margin: 0px;
+    padding: 5px;
+    list-style: none;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current{
+    background: #eee;
+    color: #222;
+}
+
+.tab-content{
+    display: none;
+    background: #eee;
+    padding: 15px;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+.tab-link{
+    border:1px solid #222;
+    margin:2px;
+    width: 34%;
+}
+
+@media screen and (min-width: 700px){
+    .tab-link{
+        margin:0;
+        border:none;
+        width: auto;
+    }
+    ul.tabs{
+        padding:0;
+    }
+}

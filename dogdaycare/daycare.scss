@@ -19,9 +19,8 @@
 }
 
 body{
-    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.3)), url(../images/BACKGROUNDdaycare.jpg) no-repeat fixed;
-    background-size: cover;
-    background-position: -100px;
+    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.3)), url(../images/background-daycare-mobile.jpg) no-repeat;
+    background-size: contain;
     font-family: Arial;
     margin:0;
 }
@@ -236,9 +235,8 @@ body{
 
 @media screen and (min-width: 700px){
   body{
-    background:linear-gradient(rgba(141,153,174,0.3), rgba(141,153,174,0.4)), url(../images/backgrounddaycare.jpg) no-repeat fixed;
+    background:linear-gradient(rgba(141,153,174,0.3), rgba(141,153,174,0.4)), url(../images/background-daycare.jpg) no-repeat fixed;
     background-size: cover;
-    background-position: -200px;
   }
   .header{
     margin:0px 10% 0 3%;
@@ -270,13 +268,5 @@ body{
           width: 50vw;
       }
       }
-  }
-}
-
-@media screen and (min-width: 1000px){
-  body{
-  background:linear-gradient(rgba(141,153,174,0.5), rgba(141,153,174,0.4)), url(../images/backgrounddaycare.jpg) no-repeat fixed;
-  background-size: cover;
-  background-position: 0px;
   }
 }

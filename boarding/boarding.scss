@@ -19,17 +19,14 @@
 }
 
 body{
-    background:linear-gradient(rgba(141,153,174,0.5), rgba(141,153,174,0.4)), url(../images/boarding.jpg) no-repeat fixed;
-    background-size: cover;
+    background:linear-gradient(rgba(141,153,174,0.5), rgba(141,153,174,0.4)), url(../images/background-boarding-mobile.jpg) no-repeat;
+    background-size: contain;
     font-family: Arial;
     margin:0;
 }
-
-
 .container{
   padding:30px 0px;
 }
-
 .header{
     display: grid;
     grid-gap: 10px;
@@ -62,7 +59,6 @@ body{
         }
       }
 }
-
 .future{
   @include responsive-font(4vw, 15px, 40px, 20px);
   grid-column:1/-1;
@@ -70,8 +66,6 @@ body{
   font-style: italic;
   text-decoration: underline;
 }
-
-
 .list{
     width: 80%;
     margin:0 auto;
@@ -90,26 +84,27 @@ body{
       list-style: none;
       padding: 0;
       li {
-        margin: 15px;
+        margin: 10px;
         height:auto;
         list-style-position: outside;
       }
   }
 }
-
 .prices{
   @include responsive-font(3vw, 10px, 25px, 30px);
   grid-column:2;
   text-align: center;
   font-style: italic;
   p{
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
   h3 , p{
     margin:5px;
   }
+  h4{
+    margin-top:10px;
+  }
 }
-
 
 //CONTACT START//
 #contact{
@@ -177,7 +172,6 @@ body{
           }
       }
 }
-
 #footer{
     display: grid;
     grid-template-columns: auto 2fr;
@@ -186,7 +180,6 @@ body{
     background:#5e5d52;
     text-align: left;
     padding: 20px 25px;
-
     h4{
         @include responsive-font(4vw, 20px, 30px, 20px);
         display: inline-block;
@@ -240,7 +233,7 @@ body{
 
 @media screen and (min-width: 700px){
   body{
-    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/backgroundboarding2.jpg) no-repeat fixed;
+    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/background-boarding.jpg) no-repeat fixed;
     background-size: cover;
   }
   .header{
@@ -254,6 +247,11 @@ body{
     width: 60%;
     margin:0 35vw;
     max-width: 800px;
+  }
+  .prices{
+    p{
+      padding-bottom: 15px;
+    }
   }
   #contact{
       display: flex;

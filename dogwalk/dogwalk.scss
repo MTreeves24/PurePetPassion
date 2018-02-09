@@ -19,9 +19,9 @@
 }
 
 body{
-    background:linear-gradient(rgba(141,153,174,0.7), rgba(141,153,174,0.4)), url(../images/dogwalking.jpg) no-repeat fixed;
-    background-size: cover;
+    background:linear-gradient(rgba(141,153,174,0.7), rgba(141,153,174,0.5)), url(../images/background-dogwalk-mobile.jpg) no-repeat;
     font-family: Arial;
+    background-size: contain;
     margin:0;
 }
 .container{
@@ -223,7 +223,7 @@ body{
 
 @media screen and (min-width: 700px){
   body{
-    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/dogwalking.jpg) no-repeat fixed;
+    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/background-dogwalk.jpg) no-repeat fixed;
     background-size: cover;
   }
   .header{
