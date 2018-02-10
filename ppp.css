@@ -107,7 +107,7 @@ body {
   top: 50%;
   left: 42%;
   width: 25%;
-  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
   font-size: 5vw;
   color: #222;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.42); }
