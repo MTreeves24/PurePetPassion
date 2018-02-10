@@ -106,6 +106,14 @@ body {
     height: 100px; }
   #contact .details p {
     margin-top: 0; }
+  #contact .details a {
+    text-decoration: none;
+    color: #111; }
+  #contact .details .fa-facebook {
+    font-size: 50px;
+    color: #3B5998; }
+    #contact .details .fa-facebook:hover {
+      color: #111; }
 
 .form fieldset {
   width: 80vw;
@@ -206,15 +214,14 @@ body {
   align-items: center;
   background: #5e5d52;
   padding: 0px 10px;
-  font-size: 10px;
-  color: white;
-  text-align: right; }
+  font-size: 14px;
+  color: white; }
   .copyright a {
     color: white; }
 
 @media screen and (min-width: 700px) {
   body {
-    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-dogwalk.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-dogwalk-mobile.jpg) no-repeat;
     background-size: cover; }
 
   .header {
@@ -241,5 +248,9 @@ body {
         height: 141px; }
     #contact .form fieldset {
       width: 50vw; } }
+@media screen and (min-width: 1000px) {
+  body {
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-dogwalk.jpg) no-repeat fixed;
+    background-size: cover; } }
 
 /*# sourceMappingURL=dogwalk.css.map */

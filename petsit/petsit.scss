@@ -108,6 +108,17 @@ body{
         p{
             margin-top:0;
         }
+        a{
+          text-decoration: none;
+          color: #111;
+        }
+        .fa-facebook{
+          font-size: 50px;
+          color: #3B5998;
+          &:hover{
+            color:#111;
+          }
+        }
     }
 }
 .form{
@@ -214,9 +225,8 @@ body{
     align-items:center;
     background:#5e5d52;
     padding:0px 10px;
-    font-size: 10px;
+    font-size: 14px;
     color: white;
-    text-align: right;
     a{
         color:white;
     }

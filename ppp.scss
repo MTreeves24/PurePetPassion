@@ -218,7 +218,7 @@ body{
 #experience{
         background: linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.3)),
         url(images/ron.jpg) no-repeat;
-        background-position: -200px;
+        background-position: -250px;
         color: white;
         padding:30px 10px;
         text-shadow:1px 1px 1px black;
@@ -432,12 +432,23 @@ body{
         p{
             margin-top:0;
         }
+        a{
+          text-decoration: none;
+          color: #111;
+        }
+        .fa-facebook{
+          font-size: 50px;
+          color: #3B5998;
+          &:hover{
+            color:#111;
+          }
+        }
     }
 }
 .form{
     fieldset{
         width: 80vw;
-        margin:0 auto;
+        margin:20px auto;
         border:2px solid #111;
      legend{
           font-size: 40px;
@@ -542,9 +553,8 @@ body{
     align-items:center;
     background:#5e5d52;
     padding:0px 10px;
-    font-size: 10px;
+    font-size: 14px;
     color: white;
-    text-align: right;
     a{
         color:white;
     }

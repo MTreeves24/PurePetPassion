@@ -133,6 +133,17 @@ body{
         p{
             margin-top:0;
         }
+        a{
+          text-decoration: none;
+          color: #111;
+        }
+        .fa-facebook{
+          font-size: 50px;
+          color: #3B5998;
+          &:hover{
+            color:#111;
+          }
+        }
     }
 }
 .form{
@@ -218,7 +229,6 @@ body{
                 &:hover{
                     background:rgba(244,244,244,0.8);
                 }
-
             }
         }
     }
@@ -240,9 +250,8 @@ body{
     align-items:center;
     background:#5e5d52;
     padding:0px 10px;
-    font-size: 10px;
+    font-size: 14px;
     color: white;
-    text-align: right;
     a{
         color:white;
     }
@@ -251,7 +260,7 @@ body{
 
 @media screen and (min-width: 700px){
   .container{
-    background:linear-gradient(rgba(141,153,174,0.3), rgba(141,153,174,0.4)), url(../images/training.jpg) no-repeat fixed;
+    background:linear-gradient(rgba(141,153,174,0.3), rgba(141,153,174,0.4)), url(../images/training-mobile.jpg) no-repeat;
     background-size: cover;
   }
   .container2{
@@ -301,3 +310,9 @@ body{
   }
 }
 
+@media screen and (min-width: 1200px){
+  body{
+    background:linear-gradient(rgba(141,153,174,0.3), rgba(141,153,174,0.4)), url(../images/training.jpg) no-repeat fixed;
+    background-size: cover;
+  }
+}

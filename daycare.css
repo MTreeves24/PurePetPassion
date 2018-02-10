@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgba(141, 153, 174, 0.7), rgba(141, 153, 174, 0.4)), url(../images/background-petsit-mobile.jpg) no-repeat;
+  background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.3)), url(../images/daycare-mobile.jpg) no-repeat;
   background-size: contain;
   font-family: Arial;
   margin: 0; }
@@ -56,9 +56,9 @@ body {
   @media (max-width: 333.3333333333px) {
     .list {
       font-size: 10px; } }
-  @media (min-width: 1666.6666666667px) {
+  @media (min-width: 1333.3333333333px) {
     .list {
-      font-size: 50px; } }
+      font-size: 40px; } }
   .list .fa-paw {
     font-size: 10vw;
     max-width: 80px; }
@@ -92,13 +92,17 @@ body {
   @media (max-width: 333.3333333333px) {
     .prices {
       font-size: 10px; } }
-  @media (min-width: 833.3333333333px) {
+  @media (min-width: 666.6666666667px) {
     .prices {
-      font-size: 25px; } }
+      font-size: 20px; } }
   .prices p {
     padding-bottom: 15px; }
-  .prices h3, .prices p {
+  .prices h3 {
     margin: 5px; }
+  .prices .clarification {
+    margin: 5%; }
+    .prices .clarification h4 {
+      margin: 0; }
 
 #contact {
   text-align: center;
@@ -108,14 +112,6 @@ body {
     height: 100px; }
   #contact .details p {
     margin-top: 0; }
-  #contact .details a {
-    text-decoration: none;
-    color: #111; }
-  #contact .details .fa-facebook {
-    font-size: 50px;
-    color: #3B5998; }
-    #contact .details .fa-facebook:hover {
-      color: #111; }
 
 .form fieldset {
   width: 80vw;
@@ -223,7 +219,7 @@ body {
 
 @media screen and (min-width: 700px) {
   body {
-    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-petsit-mobile.jpg) no-repeat;
+    background: linear-gradient(rgba(141, 153, 174, 0.3), rgba(141, 153, 174, 0.4)), url(../images/background-daycare-mobile.jpg) no-repeat;
     background-size: cover; }
 
   .header {
@@ -250,9 +246,9 @@ body {
         height: 141px; }
     #contact .form fieldset {
       width: 50vw; } }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   body {
-    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-petsit.jpg) no-repeat fixed;
+    background: linear-gradient(rgba(141, 153, 174, 0.3), rgba(141, 153, 174, 0.4)), url(../images/background-daycare.jpg) no-repeat fixed;
     background-size: cover; } }
 
-/*# sourceMappingURL=petsit.css.map */
+/*# sourceMappingURL=daycare.css.map */
