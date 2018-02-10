@@ -177,7 +177,6 @@ body {
 
 #experience {
   background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.3)), url(images/ron.jpg) no-repeat;
-  background-size: cover;
   background-position: -200px;
   color: white;
   padding: 30px 10px;
@@ -524,9 +523,9 @@ body {
     border-bottom: 5px solid white; }
     #hero .hero-title {
       font-size: 3.5vw;
-      top: 32%;
-      left: 34%;
-      width: 35%; }
+      top: 31%;
+      left: 37%;
+      width: 30%; }
     #hero .logo {
       width: 23%;
       top: -4%;
@@ -538,8 +537,7 @@ body {
       max-width: 250px; }
 
   #experience {
-    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.2)), url("images/ron.jpg") no-repeat fixed;
-    background-position: -150px 0px;
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.2)), url("images/ron.jpg") no-repeat scroll;
     background-size: cover; }
     #experience ul {
       width: 60vw;
@@ -582,7 +580,8 @@ body {
       width: 50vw; } }
 @media screen and (min-width: 1200px) {
   #experience {
-    background-position: 0; }
+    background-position: 0;
+    background-attachment: fixed; }
 
   #experience ul {
     max-width: 600px; }
