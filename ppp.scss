@@ -25,6 +25,7 @@ body{
   font-size: $responsive;
 }
 
+//********************NAV START********************//
 .nav {
   position: fixed;
   margin: 0;
@@ -107,11 +108,14 @@ body{
   transform: translateY(-1px) rotate(-90deg);
 }
 //HAMBURGER END//
+//********************NAV END********************//
 
 .container{
     display: grid;
     grid-template-rows:auto auto auto auto auto auto auto auto;
 }
+
+//********************HERO START********************//
 #hero{
     display:table; //for some reason Firefox and Edge need this to show the background image?!
     position: relative;
@@ -138,6 +142,9 @@ body{
     color: #222;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.42);
 }
+//********************HERO END********************//
+
+//********************ABOUT START********************//
 #about{
   background:radial-gradient(#E1F5C4, #EDE574);
     position: relative;
@@ -205,7 +212,9 @@ body{
         grid-area:aboutMe2;
     }
 }
+//********************ABOUT END********************//
 
+//********************EXPERIENCE START********************//
 #experience{
         background: linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.3)),
         url("images/ron.jpg") no-repeat fixed;
@@ -223,7 +232,9 @@ body{
             }
         }
 }
+//********************EXPERIENCE END********************//
 
+//********************SERVICES START********************//
 #services{
     padding:30px 10px;
     background: #e1f5c4;
@@ -243,7 +254,6 @@ body{
         }
     }
 }
-
 .service-item-container{
     display: flex;
     flex-wrap:wrap;
@@ -264,7 +274,9 @@ body{
         }
     }
 }
+//********************SERVICES END********************//
 
+//********************GALLERY START********************//
 #gallery{
   background:radial-gradient(#E1F5C4, #EDE574);
     h1{
@@ -311,7 +323,7 @@ body{
     bottom: -10px;
     z-index: 2;
 }
-
+//*****************************/
 #imageBox{
     display: flex;
     padding: 10px;
@@ -320,7 +332,6 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
 }
-
 #imageBox li{
     display: inline-block;
     margin: 0 5px;
@@ -330,7 +341,6 @@ body{
     cursor: pointer;
     border: 1px solid #FFFFFF;
 }
-
 #imageContainer ::-webkit-scrollbar{
     height: 4px;
     background-color: rgba(100,0,0,0.3);
@@ -342,8 +352,9 @@ body{
 #imageContainer ::-webkit-scrollbar-thumb:window-inactive{
     background: #aaa;
 }
+//********************GALLERY END********************//
 
-//TESTIMONIAL START//
+//********************TESTIMONIAL START********************//
 #testimonials{
     background:#e1f5c4;
     padding-bottom: 30px;
@@ -410,9 +421,9 @@ body{
     background-size: cover;
     background-position: 0 -20px;
 }
-//TESTIMONIAL END//
+//********************TESTIMONIAL END********************//
 
-//CONTACT START//
+//********************CONTACT START********************//
 #contact{
     padding:20px 0px 30px 0px;
     .details{
@@ -476,7 +487,9 @@ body{
           }
       }
 }
+//********************CONTACT END********************//
 
+//********************FOOTER START********************//
 #footer{
     display: grid;
     grid-template-columns: auto 2fr;
@@ -522,6 +535,7 @@ body{
         max-width: 300px;
     }
 }
+//********************FOOTER END********************//
 
 .copyright{
     display: flex;
