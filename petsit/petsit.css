@@ -216,7 +216,7 @@ body {
 
 @media screen and (min-width: 700px) {
   body {
-    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-petsit.jpg) no-repeat scroll;
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-petsit-mobile.jpg) no-repeat;
     background-size: cover; }
 
   .header {
@@ -243,5 +243,9 @@ body {
         height: 141px; }
     #contact .form fieldset {
       width: 50vw; } }
+@media screen and (min-width: 1200px) {
+  body {
+    background: linear-gradient(rgba(141, 153, 174, 0.6), rgba(141, 153, 174, 0.4)), url(../images/background-petsit.jpg) no-repeat fixed;
+    background-size: cover; } }
 
 /*# sourceMappingURL=petsit.css.map */
