@@ -77,3 +77,14 @@ $(document).ready(function(){
   });
 
 });
+
+
+
+$(function() {
+
+    $('#boxclose').click(function(){
+        $('#box').animate({'top':'-200px'},400,function(){
+        });
+    });
+
+});
