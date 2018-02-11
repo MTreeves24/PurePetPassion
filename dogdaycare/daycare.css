@@ -226,6 +226,10 @@ body {
     color: white; }
 
 @media screen and (min-width: 700px) {
+  body {
+    background: linear-gradient(rgba(141, 153, 174, 0.3), rgba(141, 153, 174, 0.4)), url(../images/daycare-mobile.jpg) no-repeat;
+    background-size: cover; }
+
   .header {
     margin: 0px 10% 0 3%; }
     .header h1 {
@@ -253,7 +257,7 @@ body {
 
   .copyright {
     font-size: 14px; } }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1025px) {
   body {
     background: linear-gradient(rgba(141, 153, 174, 0.3), rgba(141, 153, 174, 0.4)), url(../images/background-daycare.jpg) no-repeat fixed;
     background-size: cover; } }
