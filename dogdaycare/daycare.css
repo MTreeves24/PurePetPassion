@@ -85,14 +85,14 @@ body {
 
 .prices {
   font-size: 30px;
-  font-size: 3vw;
+  font-size: 2.8vw;
   grid-column: 2;
   text-align: center;
   font-style: italic; }
-  @media (max-width: 333.3333333333px) {
+  @media (max-width: 357.1428571429px) {
     .prices {
       font-size: 10px; } }
-  @media (min-width: 666.6666666667px) {
+  @media (min-width: 714.2857142857px) {
     .prices {
       font-size: 20px; } }
   .prices p {

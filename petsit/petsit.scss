@@ -84,7 +84,7 @@ body{
   }
 }
 .prices{
-  @include responsive-font(3vw, 10px, 25px, 30px);
+  @include responsive-font(2.8vw, 10px, 25px, 30px);
   grid-column:2;
   text-align: center;
   font-style: italic;
