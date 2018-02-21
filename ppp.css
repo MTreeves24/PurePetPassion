@@ -93,18 +93,18 @@ body {
   background-size: contain;
   width: 100%;
   height: 0;
-  padding-top: 138%;
+  padding-top: 135%;
   border-bottom: 5px solid white; }
 
 .logo {
   position: absolute;
   width: 40%;
-  top: -10px;
-  left: -5px; }
+  top: -1.2em;
+  left: -20px; }
 
 .hero-title {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 42%;
   width: 25%;
   font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
@@ -606,7 +606,7 @@ a.boxclose {
       color: #444; }
 
   #hero {
-    background: url("images/hero-image-large.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("images/hero-image-large-new.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
@@ -615,11 +615,11 @@ a.boxclose {
     #hero .hero-title {
       font-size: 3.5vw;
       top: 31%;
-      left: 37%;
+      left: 35%;
       width: 30%; }
     #hero .logo {
       width: 23%;
-      top: -4%;
+      top: -5%;
       left: -1%; }
     #hero .offer {
       z-index: 1000;
@@ -729,7 +729,7 @@ a.boxclose {
     right: 0px; } }
 @media screen and (min-width: 1400px) {
   #hero {
-    background: url("images/hero-image-wide.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("images/hero-image-wide-new.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
@@ -740,7 +740,6 @@ a.boxclose {
       width: 40%; }
     #hero .logo {
       width: 18%;
-      top: -5%;
-      left: -1%; } }
+      top: -5.5%; } }
 
 /*# sourceMappingURL=ppp.css.map */

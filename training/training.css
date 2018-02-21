@@ -127,8 +127,26 @@ body {
   background-size: cover;
   background-size: 1100px; }
 
+.prices {
+  border-top: 4px solid black;
+  text-align: center;
+  font-size: 25px;
+  font-size: 2.4vw;
+  padding: 2% 10%;
+  background: #ffe; }
+  @media (max-width: 625px) {
+    .prices {
+      font-size: 15px; } }
+  @media (min-width: 1458.3333333333px) {
+    .prices {
+      font-size: 35px; } }
+  .prices h2 {
+    margin-bottom: 10px; }
+  .prices * {
+    margin: 0; }
+
 #contact {
-  border-top: 4px solid white;
+  border-top: 4px solid black;
   text-align: center;
   background-color: #f0e98d;
   padding: 20px 0px 30px 0px; }

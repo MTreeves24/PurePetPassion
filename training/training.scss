@@ -120,9 +120,23 @@ body{
   background-size: 1100px;
 }
 
+.prices{
+    border-top:4px solid black;
+    text-align:center;
+    @include responsive-font(2.4vw, 15px, 35px, 25px);
+    padding:2% 10%;
+    background:#ffe;
+    h2{
+      margin-bottom:10px;
+    }
+    *{
+      margin:0;
+    }
+}
+
 //CONTACT START//
 #contact{
-    border-top: 4px solid white;
+    border-top: 4px solid black;
     text-align: center;
     background-color: #f0e98d;
     padding:20px 0px 30px 0px;
