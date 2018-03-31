@@ -80,6 +80,7 @@ $(document).ready(function(){
 
 
 
+
 $(function() {
 
     $('#boxclose').click(function(){
