@@ -126,7 +126,7 @@ body{
     background-size: contain;
     width: 100%;
     height: 0;
-    padding-top:135%;
+    padding-top:147%;
     border-bottom: 5px solid white;
 }
 .logo{
@@ -138,7 +138,7 @@ body{
 .hero-title{
     position: absolute;
     top:45%;
-    left:42%;
+    left:44%;
     width: 25%;
     font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
     font-size: 5vw;
@@ -362,8 +362,8 @@ a.boxclose{
     margin-bottom: 5px;
   }
   img{
-    border-top:1.5px solid black;
-    border-bottom:1.5px solid black;
+    border-top:4px solid black;
+    border-bottom:4px solid black;
     width: 100%;
   }
 }
@@ -636,7 +636,6 @@ a.boxclose{
         display: grid;
         grid-template-columns:1fr 1fr;
         grid-template-rows:1fr 1fr 1fr;
-        max-width: 300px;
     }
 }
 //********************FOOTER END********************//
@@ -755,7 +754,7 @@ a.boxclose{
     .areas-covered{
       padding:0px 10% 20px 10%;
       img{
-        border: 1.5px solid black;
+        border: 4px solid black;
         border-radius: 10px;
       }
     }
@@ -808,7 +807,6 @@ a.boxclose{
     .areas-covered{
       padding:0px 20% 20px 20%;
       img{
-        border: 1.5px solid black;
         border-radius: 10px;
       }
     }
