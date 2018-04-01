@@ -377,73 +377,10 @@ a.boxclose{
         @include responsive-font(4vw, 20px, 50px, 30px);
     }
     .slider{
-        width: 85vw;
+        width: 96vw;
         margin: 30px auto;
         text-align: center;
     }
-    #main-img{
-        width: 95%;
-        max-width: 900px;
-        border:3px solid white;
-        box-shadow: 0px 25px 19px -18px #545454;
-    }
-    #imageContainer{
-        width:95%;
-        margin:0 auto;
-        position: relative;
-    }
-}
-
-/**********SHADING ON EACH END OF TUNNEL**********/
-#imageContainer:before{
-    content: '';
-    width: 30px;
-    box-shadow: 20px 0 20px -10px #000000;
-    position: absolute;
-    top: -10px;
-    left: -30px;
-    bottom: -10px;
-    z-index: 2;
-}
-
-#imageContainer:after{
-    content: '';
-    width: 30px;
-    box-shadow: -20px 0 20px -10px #000000;
-    position: absolute;
-    top: -10px;
-    right: -30px;
-    bottom: -10px;
-    z-index: 2;
-}
-//*****************************/
-#imageBox{
-    display: flex;
-    padding: 10px;
-    background-color: rgba(0,0,0,0.2);
-    list-style: none;
-    white-space: nowrap;
-    overflow-x: scroll;
-}
-#imageBox li{
-    display: inline-block;
-    margin: 0 5px;
-}
-#imageBox img{
-    width: 70px;
-    cursor: pointer;
-    border: 1px solid #FFFFFF;
-}
-#imageContainer ::-webkit-scrollbar{
-    height: 4px;
-    background-color: rgba(100,0,0,0.3);
-    border-radius: 5px;
-}
-#imageContainer ::-webkit-scrollbar-thumb{
-    background: #fff;
-}
-#imageContainer ::-webkit-scrollbar-thumb:window-inactive{
-    background: #aaa;
 }
 //********************GALLERY END********************//
 
@@ -758,12 +695,11 @@ a.boxclose{
         border-radius: 10px;
       }
     }
-    #imageBox img{
-    width: 150px;
+    #gallery{
+      .slider{
+        width: 85vw;
     }
-    #imageContainer ::-webkit-scrollbar{
-        height: 8px;
-    }
+  }
     #contact{
         display: flex;
         align-items:center;
@@ -810,9 +746,11 @@ a.boxclose{
         border-radius: 10px;
       }
     }
-    #imageContainer{
-        width:100%;
+    #gallery{
+      .slider{
+        width: 65vw;
     }
+  }
     #testimonials{
       padding:10px 150px 50px 150px;
     }
