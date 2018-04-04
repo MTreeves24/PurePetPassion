@@ -421,18 +421,13 @@ figure.quote blockquote:after {
 
 #contact {
   padding: 20px 0px 30px 0px; }
-  #contact .details img {
+  #contact .details .ppplogo {
     height: 100px; }
   #contact .details p {
     margin-top: 0; }
   #contact .details a {
     text-decoration: none;
     color: #111; }
-  #contact .details .fa-facebook {
-    font-size: 50px;
-    color: #3B5998; }
-    #contact .details .fa-facebook:hover {
-      color: #111; }
 
 .form fieldset {
   width: 80vw;
@@ -644,7 +639,7 @@ figure.quote blockquote:after {
     #contact .details {
       margin-right: 30px;
       font-size: 20px; }
-      #contact .details img {
+      #contact .details .ppplogo {
         width: 162px;
         height: 141px; }
     #contact .form fieldset {
