@@ -90,7 +90,7 @@ body {
 #hero {
   display: table;
   position: relative;
-  background: url("images/hero-image-mobile.jpg") no-repeat, linear-gradient(to right, #E1F5C4, #EDE574);
+  background: url("images/hero/hero-image-mobile.jpg") no-repeat, linear-gradient(to right, #E1F5C4, #EDE574);
   background-size: contain;
   width: 100%;
   height: 0;
@@ -99,14 +99,14 @@ body {
 
 .logo {
   position: absolute;
-  width: 45%;
+  width: 42%;
   top: -0.7em;
   left: -25px; }
 
 .hero-title {
   position: absolute;
   top: 49%;
-  left: 43%;
+  left: 45%;
   width: 25%;
   font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
   font-size: 5vw;
@@ -329,21 +329,21 @@ a.boxclose {
         font-size: 50px; } }
   #gallery .slider {
     width: 96vw;
-    margin: 30px auto;
+    margin: 0px auto 30px auto;
     text-align: center; }
 
-#section-testimonials {
+#testimonials {
   background: #e1f5c4;
   padding-bottom: 30px; }
-  #section-testimonials h1 {
+  #testimonials h1 {
     padding-top: 10px;
     font-size: 30px;
     font-size: 4vw; }
     @media (max-width: 500px) {
-      #section-testimonials h1 {
+      #testimonials h1 {
         font-size: 20px; } }
     @media (min-width: 1250px) {
-      #section-testimonials h1 {
+      #testimonials h1 {
         font-size: 50px; } }
 
 .testimonial-flex {
@@ -356,40 +356,50 @@ figure.quote {
   flex: 1 1 10%;
   position: relative;
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 10px 5%;
   min-width: 220px;
   max-width: 510px;
   width: 100%;
   color: #333;
   text-align: left;
   box-shadow: none !important; }
-
-figure.quote * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-figure.quote img {
-  max-width: 100%;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  display: inline-block;
-  z-index: 1;
-  position: relative; }
-
-figure.quote blockquote {
-  margin: 0;
-  display: block;
-  border-radius: 8px;
-  position: relative;
-  background-color: #fafafa;
-  padding: 30px 50px 65px 50px;
-  font-size: 0.8em;
-  font-weight: 500;
-  margin: 0 0 -50px;
-  line-height: 1.6em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+  figure.quote * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  figure.quote img {
+    max-width: 100%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: inline-block;
+    z-index: 1;
+    position: relative; }
+  figure.quote blockquote {
+    margin: 0;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 30px 40px 65px 40px;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 -50px;
+    line-height: 1.6em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+  figure.quote .owner {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222; }
+  figure.quote .owner h5 {
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 800; }
+  figure.quote .owner h5 span {
+    font-weight: 400;
+    text-transform: none;
+    display: block; }
 
 figure.quote blockquote:before,
 figure.quote blockquote:after {
@@ -402,28 +412,12 @@ figure.quote blockquote:after {
 
 figure.quote blockquote:before {
   top: 35px;
-  left: 20px; }
+  left: 13px; }
 
 figure.quote blockquote:after {
   content: "\201D";
-  right: 20px;
+  right: 35px;
   bottom: 35px; }
-
-figure.quote .owner {
-  margin: 0;
-  text-transform: uppercase;
-  text-align: center;
-  color: #222; }
-
-figure.quote .owner h5 {
-  opacity: 0.8;
-  margin: 0;
-  font-weight: 800; }
-
-figure.quote .owner h5 span {
-  font-weight: 400;
-  text-transform: none;
-  display: block; }
 
 #contact {
   padding: 20px 0px 30px 0px; }
@@ -547,17 +541,11 @@ figure.quote .owner h5 span {
   #experience {
     background-position: 0; }
 
-  .t-image1 {
-    max-width: 20%; }
+  .testimonial-flex {
+    margin: 0 5%; }
 
-  .t-image2, .t-image3, .t-image4 {
-    max-width: 15%; }
-
-  .t-active {
-    max-width: 20%; }
-
-  .t-inactive {
-    max-width: 15%; } }
+  figure.quote {
+    margin: 10px 1%; } }
 @media screen and (min-width: 700px) {
   .box {
     left: 26%;
@@ -582,7 +570,7 @@ figure.quote .owner h5 span {
       color: #444; }
 
   #hero {
-    background: url("images/hero-image-large-new.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("images/hero/hero-image-medium.jpg") no-repeat, radial-gradient(#E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
@@ -591,11 +579,11 @@ figure.quote .owner h5 span {
     #hero .hero-title {
       font-size: 3.5vw;
       top: 33%;
-      left: 38%;
+      left: 37%;
       width: 30%; }
     #hero .logo {
       width: 23%;
-      top: -5%;
+      top: -4%;
       left: -1%; }
     #hero .offer {
       z-index: 1000;
@@ -649,12 +637,6 @@ figure.quote .owner h5 span {
   #gallery .slider {
     width: 85vw; }
 
-  .t-active {
-    max-width: 17%; }
-
-  .t-inactive {
-    max-width: 12%; }
-
   #contact {
     display: flex;
     align-items: center;
@@ -694,30 +676,20 @@ figure.quote .owner h5 span {
     width: 65vw; }
 
   #testimonials {
-    padding: 10px 150px 50px 150px; }
-
-  .first-testimonial-img {
-    width: 300px;
-    height: 80px; }
-
-  .circle1 {
-    right: 15px; }
-
-  .circle2 {
-    right: 0px; } }
+    padding: 10px 150px 50px 150px; } }
 @media screen and (min-width: 1400px) {
   #hero {
-    background: url("images/hero-image-wide-new.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("images/hero/hero-image-wide.jpg") no-repeat, radial-gradient(#E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
     padding-top: 40%; }
     #hero .hero-title {
-      top: 34%;
-      left: 31.5%;
+      top: 32%;
+      left: 28%;
       width: 40%; }
     #hero .logo {
-      width: 18%;
-      top: -5.5%; } }
+      width: 20%;
+      top: -4.5%; } }
 
 /*# sourceMappingURL=ppp.css.map */
