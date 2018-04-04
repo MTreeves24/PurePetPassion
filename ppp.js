@@ -88,3 +88,49 @@ $(function() {
     });
 
 });
+
+
+
+
+//FADE IN TESTIMONIAL AFTER IMG CLICKED//
+$(document).ready(function(){
+    $(".t-image1").click(function(){
+        $(".t-quote").hide()
+        $(".sophie").fadeIn(800);
+      $(this).removeClass('t-inactive');
+      $(this).addClass('t-active');
+           $(".t-image2, .t-image3, .t-image4").removeClass("t-active")
+        $(".t-image2, .t-image3, .t-image4").addClass("t-inactive")
+    });
+});
+$(document).ready(function(){
+    $(".t-image2").click(function(){
+        $(".t-quote").hide();
+        $(".debbie").fadeIn(800);
+      $(this).removeClass('t-inactive');
+      $(this).addClass('t-active');
+        $(".t-image1, .t-image3, .t-image4").removeClass("t-active")
+        $(".t-image1, .t-image3, t-image4").addClass("t-inactive")
+    });
+});
+$(document).ready(function(){
+    $(".t-image3").click(function(){
+        $(".t-quote").hide()
+        $(".grace").fadeIn(800)
+      $(this).removeClass('t-inactive');
+      $(this).addClass('t-active');
+        $(".t-image1, .t-image2, .t-image4").removeClass("t-active")
+        $(".t-image1, .t-image2, .t-image4").addClass("t-inactive")
+    });
+});
+$(document).ready(function(){
+    $(".t-image4").click(function(){
+        $(".t-quote").hide()
+        $(".twz").fadeIn(800)
+      $(this).removeClass('t-inactive');
+      $(this).addClass('t-active');
+        $(".t-image1, .t-image2, .t-image3").removeClass("t-active")
+        $(".t-image1, .t-image2, .t-image3").addClass("t-inactive")
+    });
+});
+
