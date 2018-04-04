@@ -47,19 +47,19 @@ body {
 /* CSS MENU TOGGLE*/
 .menu-toggle {
   position: fixed;
-  padding: 2em;
+  padding: 1.5em;
   top: 0em;
   right: 0em;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.4);
-  border-radius: 0px 10px; }
+  border-radius: 0px 0px 0px 10px; }
 
 .hamburger, .hamburger::before, .hamburger::after {
   content: '';
   display: block;
   background: #111;
   height: 3px;
-  width: 3em;
+  width: 2em;
   border-radius: 1px;
   -webkit-transition: all ease-in-out 350ms;
   transition: all ease-in-out 350ms; }
