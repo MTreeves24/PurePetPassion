@@ -136,34 +136,34 @@ body{
 .hero-title{
     position: absolute;
     top:49%;
-    left:45%;
+    left:44%;
     width: 25%;
     font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
     font-size: 5vw;
     color: #222;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.42);
 }
-.offer{
-  z-index: 1000;
-  position: absolute;
-  top: auto;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  background:rgba(255,255,255,0.5);
-  border: 2px dashed red;
-  p{
-    font-size: 12px;
-    width: 100%;
-  }
-  button{
-    position: absolute;
-    box-shadow: none;
-    background-color: rgba(1,1,1,0);
-    top:0;
-    right:0;
-  }
-}
+// .offer{
+//   z-index: 1000;
+//   position: absolute;
+//   top: auto;
+//   bottom: 0;
+//   left: 50%;
+//   right: 0;
+//   background:rgba(255,255,255,0.5);
+//   border: 2px dashed red;
+//   p{
+//     font-size: 12px;
+//     width: 100%;
+//   }
+//   button{
+//     position: absolute;
+//     box-shadow: none;
+//     background-color: rgba(1,1,1,0);
+//     top:0;
+//     right:0;
+//   }
+// }
 
 .box{
     position: fixed;
@@ -236,6 +236,9 @@ a.boxclose{
                         "aboutImages aboutImages aboutImages"
                         "aboutMe2 aboutMe2 aboutMe2";
     padding:0px 5%;
+    .paw-logo{
+      width:25px;
+    }
     img{
         margin:0 auto;
     }
@@ -672,12 +675,17 @@ figure.quote blockquote:after {
           }
         }
     }
+  #about{
+    .paw-logo{
+      width:50px;
+    }
     .about-images{
         margin:10px;
         .about-me-center-img{
             max-width: 250px;
         }
     }
+  }
     #experience{
         background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.2)),url("images/ron.jpg") no-repeat scroll;
         background-size:cover;
