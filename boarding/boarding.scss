@@ -45,48 +45,33 @@ body{
       .back{
         text-align: center;
         padding:10px;
+        font-size:20px;
         text-decoration: none;
         color: black;
         background:rgba(1,1,1,0.1);
         border:1px solid black;
         box-shadow: 1px 1px 1px black;
-        @include responsive-font(4vw, 15px, 20px, 20px);
         &:hover{
           background:rgba(255,255,255,0.1);
         }
-        .fa-chevron-circle-left{
-          margin-right: 5px;
+        .back-button{
+          width:25px;
+          margin-bottom:-5px;
         }
       }
 }
-.future{
-  @include responsive-font(4vw, 15px, 40px, 20px);
-  grid-column:1/-1;
-  text-align: center;
-  font-style: italic;
-  text-decoration: underline;
-}
+
 .list{
-    width: 80%;
+    width: 95%;
     margin:0 auto;
     @include responsive-font(3vw, 10px, 50px, 30px);
-    .fa-paw{
-      font-size: 10vw;
-      max-width: 80px;
-    }
   ul{
-    display:grid;
-    grid-template-columns:auto 1fr;
-    align-items:center;
     @include responsive-font(3vw, 10px, 25px, 30px);
-    grid-column:2;
       list-style-type: none;
-      list-style: none;
-      padding: 0;
       li {
-        margin: 10px;
-        height:auto;
-        list-style-position: outside;
+        background: url("../images/paw.png") no-repeat left top;
+        padding: 10px 0px 10px 70px;
+        line-height:25px;
       }
   }
 }
@@ -122,12 +107,9 @@ body{
           text-decoration: none;
           color: #111;
         }
-        .fa-facebook{
-          font-size: 50px;
-          color: #3B5998;
-          &:hover{
-            color:#111;
-          }
+        .facebook{
+          width:50px;
+          height:50px;
         }
     }
 }
@@ -254,8 +236,8 @@ body{
     }
 }
   .list{
-    width: 60%;
-    margin:0 35vw;
+    width: 80%;
+    margin:0 15vw;
     max-width: 800px;
   }
   .prices{
@@ -287,9 +269,18 @@ body{
   }
 }
 
+
+
 @media screen and (min-width: 1025px){
   body{
     background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/background-boarding.jpg) no-repeat fixed;
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1350px){
+  .list{
+    width:100%;
+    margin:0 39vw;
   }
 }

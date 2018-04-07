@@ -243,15 +243,6 @@ a.boxclose{
         grid-area:title;
         @include responsive-font(4vw, 18px, 50px, 30px);
         margin: 20px 0px 0px 0px;
-        &:before , &:after{
-            content: "\f1b0"; /* FontAwesome Unicode */
-            font-family: FontAwesome;
-            display: inline-block;
-            color: #111;
-            margin: 5px; /* same as padding-left set on li */
-            width: 1.3em; /* same as padding-left set on li */
-            font-size: 5vw;
-        }
     }
     .about-images{
         height: auto;
@@ -397,7 +388,6 @@ a.boxclose{
   flex-wrap:wrap;
   justify-content:center;
 }
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 figure.quote {
   font-family: 'Raleway', Arial, sans-serif;
   flex: 1 1 10%;
@@ -692,19 +682,18 @@ figure.quote blockquote:after {
         background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.2)),url("images/ron.jpg") no-repeat scroll;
         background-size:cover;
          ul{
-            width: 60vw;
-            max-width: 450px;
-            margin-left: 80px;
+            width: 85vw;
+            max-width: 600px;
+            margin-left: 60px;
+            list-style-type:none;
+            padding:0;
             text-align: left;
             li{
-            &:before{
-                content: "\f1b0"; /* FontAwesome Unicode */
-                font-family: FontAwesome;
-                display: inline-block;
-                margin-left: -1.3em; /* same as padding-left set on li */
-                width: 1.3em; /* same as padding-left set on li */
-                font-size: 40px;
-            }
+              background: url("images/paw-white.png") no-repeat left top;
+              height:20px;
+              padding-top:10px;
+              padding-bottom:30px;
+              padding-left:70px;
           }
         }
     }
@@ -759,7 +748,7 @@ figure.quote blockquote:after {
         background-attachment: fixed;
     }
     #experience ul{
-        max-width: 600px;
+        max-width: 620px;
     }
     .service-item-container{
         margin:0px 150px;
