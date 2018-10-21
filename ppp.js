@@ -70,5 +70,12 @@ $(function() {
 
 });
 
-
+const label = document.querySelector(".read-more-trigger")
+label.addEventListener("click", function(){
+  if(this.textContent === "See more"){
+    this.textContent = "See less";
+  } else if (this.textContent === "See less"){
+    this.textContent = "See more";
+  }
+})
 
