@@ -56,7 +56,7 @@ body {
 .hamburger, .hamburger::before, .hamburger::after {
   content: '';
   display: block;
-  background: #111;
+  background: #222;
   height: 3px;
   width: 2em;
   border-radius: 1px;
@@ -89,7 +89,7 @@ body {
 #hero {
   display: table;
   position: relative;
-  background: url("images/hero/hero-image-mobile.jpg") no-repeat, linear-gradient(to right, #E1F5C4, #EDE574);
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto:best/v1541267661/Hero%20Images%20(no%20bg)/Hero-image-mobile.png") no-repeat, linear-gradient(to right, #E1F5C4, #EDE574);
   background-size: contain;
   width: 100%;
   height: 0;
@@ -114,10 +114,11 @@ body {
 
 .box {
   position: fixed;
-  top: 86%;
+  width: auto;
+  top: 82%;
   bottom: auto;
-  left: 10%;
-  right: 10%;
+  left: 5%;
+  right: 5%;
   background-color: #fff;
   color: #7F7F7F;
   padding: 10px 20px;
@@ -132,7 +133,7 @@ body {
     font-size: 20px;
     border-bottom: 1px dashed #7F7F7F;
     margin: -20px -20px 0px -20px;
-    padding: 3px;
+    padding: 10px;
     background-color: #FFEFEF;
     color: #EF7777;
     -moz-border-radius: 20px 20px 0px 0px;
@@ -141,7 +142,8 @@ body {
     -khtml-border-top-left-radius: 20px;
     -khtml-border-top-right-radius: 20px; }
   .box p {
-    color: #111;
+    font-size: 15px;
+    color: #222;
     margin: 5px 0px 0px 0px;
     padding: 0px; }
 
@@ -232,7 +234,12 @@ a.boxclose {
 
 #services {
   padding: 30px 0px 0px 0px;
-  background: #e1f5c4; }
+  background: #e1f5c4;
+  /* fallback for old browsers */
+  background: -webkit-radial-gradient(#E1F5C4, #EDE574);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(#EDE574, #E1F5C4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #services h1 {
     font-size: 30px;
     font-size: 5vw;
@@ -266,13 +273,13 @@ a.boxclose {
   padding: 0px 0px; }
   .service-item-container .service-item {
     text-decoration: none;
-    color: #111;
+    color: #222;
     margin: 10px;
     width: 40%;
     font-weight: 700; }
     .service-item-container .service-item img {
       width: 100%;
-      border: 1.5px solid black;
+      border: 1.5px solid #222;
       border-radius: 10px; }
       .service-item-container .service-item img:hover {
         filter: grayscale(100%);
@@ -283,12 +290,17 @@ a.boxclose {
   .areas-covered h2 {
     margin-bottom: 5px; }
   .areas-covered img {
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
+    border-top: 4px solid #222;
+    border-bottom: 4px solid #222;
     width: 100%; }
 
 #gallery {
-  background: radial-gradient(#E1F5C4, #EDE574); }
+  background: #e1f5c4;
+  /* fallback for old browsers */
+  background: -webkit-radial-gradient(#E1F5C4, #EDE574);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(#E1F5C4, #EDE574);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #gallery h1 {
     padding-top: 10px;
     font-size: 30px;
@@ -306,6 +318,10 @@ a.boxclose {
 
 #testimonials {
   background: #e1f5c4;
+  background: -webkit-radial-gradient(#EDE574, #E1F5C4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(#EDE574, #E1F5C4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-bottom: 30px; }
   #testimonials h1 {
     padding-top: 10px;
@@ -423,21 +439,27 @@ figure.quote blockquote:after {
   border-radius: .25em; }
 
 #contact {
+  background: #e1f5c4;
+  /* fallback for old browsers */
+  background: -webkit-radial-gradient(#E1F5C4, #EDE574);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(#E1F5C4, #EDE574);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px 0px 30px 0px; }
   #contact .details .ppplogo {
     height: 100px; }
   #contact .details p {
     margin-top: 0;
     background: none;
-    color: #111; }
+    color: #222; }
   #contact .details a {
     text-decoration: none;
-    color: #111; }
+    color: #222; }
 
 .form fieldset {
   width: 80vw;
   margin: 20px auto;
-  border: 2px solid #111; }
+  border: 2px solid #222; }
   .form fieldset legend {
     font-size: 40px;
     font-weight: 500; }
@@ -490,7 +512,7 @@ figure.quote blockquote:after {
     font-size: 4vw;
     display: inline-block;
     margin: 5px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid #222; }
     @media (max-width: 500px) {
       #footer h4 {
         font-size: 20px; } }
@@ -503,7 +525,7 @@ figure.quote blockquote:after {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    border-left: 1px solid black; }
+    border-left: 1px solid #222; }
     @media (max-width: 433.3333333333px) {
       #footer ul {
         font-size: 13px; } }
@@ -548,8 +570,9 @@ figure.quote blockquote:after {
     margin: 10px 1%; } }
 @media screen and (min-width: 700px) {
   .box {
-    left: 26%;
-    right: 26%; }
+    left: 10%;
+    right: 10%;
+    top: 85%; }
 
   .menu-toggle {
     display: none; }
@@ -564,13 +587,13 @@ figure.quote blockquote:after {
       border-bottom: none; }
     .nav2 a {
       background: none;
-      color: #111;
+      color: #222;
       height: 10%; }
     .nav2 a:hover, .nav2 nav a:focus {
       color: #444; }
 
   #hero {
-    background: url("images/hero/hero-image-medium.jpg") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267378/Hero%20Images%20(no%20bg)/hero-image-mediumnew-nobg.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
@@ -631,7 +654,7 @@ figure.quote blockquote:after {
   .areas-covered {
     padding: 0px 10% 20px 10%; }
     .areas-covered img {
-      border: 4px solid black;
+      border: 4px solid #222;
       border-radius: 10px; }
 
   #gallery .slider {
@@ -654,8 +677,8 @@ figure.quote blockquote:after {
     font-size: 14px; } }
 @media screen and (min-width: 1200px) {
   .box {
-    left: 35%;
-    right: 35%; }
+    left: 20%;
+    right: 20%; }
 
   #experience {
     background-position: 0;
@@ -679,7 +702,7 @@ figure.quote blockquote:after {
     padding: 10px 150px 50px 150px; } }
 @media screen and (min-width: 1400px) {
   #hero {
-    background: url("images/hero/hero-image-wide.jpg") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267387/Hero%20Images%20(no%20bg)/Hero-image-wide.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;

@@ -5,6 +5,7 @@ body{
     text-align: center;
 }
 
+
 @mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
   $responsive-unitless: $responsive / ($responsive - $responsive + 1);
   $dimension: if(unit($responsive) == 'vh', 'height', 'width');
@@ -84,7 +85,7 @@ body{
 .hamburger, .hamburger::before, .hamburger::after {
   content: '';
   display: block;
-  background:#111;
+  background:#222;
   height: 3px;
   width: 2em;
   border-radius: 1px;
@@ -120,7 +121,7 @@ body{
 #hero{
     display:table; //for some reason Firefox and Edge need this to show the background image?!
     position: relative;
-    background:url("images/hero/hero-image-mobile.jpg") no-repeat, linear-gradient(to right, #E1F5C4, #EDE574);
+    background:url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto:best/v1541267661/Hero%20Images%20(no%20bg)/Hero-image-mobile.png") no-repeat, linear-gradient(to right, #E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
@@ -167,10 +168,11 @@ body{
 
 .box{
     position: fixed;
-    top:86%;
+    width:auto;
+    top:82%;
     bottom:auto;
-    left:10%;
-    right:10%;
+    left:5%;
+    right:5%;
     background-color:#fff;
     color:#7F7F7F;
     padding:10px 20px;
@@ -185,7 +187,7 @@ body{
       font-size: 20px;
         border-bottom: 1px dashed #7F7F7F;
         margin:-20px -20px 0px -20px;
-        padding:3px;
+        padding:10px;
         background-color:#FFEFEF;
         color:#EF7777;
         -moz-border-radius:20px 20px 0px 0px;
@@ -195,7 +197,8 @@ body{
         -khtml-border-top-right-radius: 20px;
     }
     p{
-      color: #111;
+      font-size:15px;
+      color: #222;
       margin:5px 0px 0px 0px;
       padding:0px;
     }
@@ -310,7 +313,10 @@ a.boxclose{
 //********************SERVICES START********************//
 #services{
     padding:30px 0px 0px 0px;
-    background: #e1f5c4;
+    background: #e1f5c4;  /* fallback for old browsers */
+    background: -webkit-radial-gradient(#E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(#EDE574,#E1F5C4 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     h1{
         @include responsive-font(5vw, 20px, 50px, 30px);
         margin:5px;
@@ -334,13 +340,13 @@ a.boxclose{
     padding:0px 0px;
     .service-item{
         text-decoration: none;
-        color: #111;
+        color: #222;
         margin:10px;
         width: 40%;
         font-weight: 700;
         img{
             width: 100%;
-            border:1.5px solid black;
+            border:1.5px solid #222;
             border-radius: 10px;
             &:hover{
                 filter:grayscale(100%);
@@ -355,8 +361,8 @@ a.boxclose{
     margin-bottom: 5px;
   }
   img{
-    border-top:4px solid black;
-    border-bottom:4px solid black;
+    border-top:4px solid #222;
+    border-bottom:4px solid #222;
     width: 100%;
   }
 }
@@ -364,7 +370,10 @@ a.boxclose{
 
 //********************GALLERY START********************//
 #gallery{
-  background:radial-gradient(#E1F5C4, #EDE574);
+  background: #e1f5c4;  /* fallback for old browsers */
+  background: -webkit-radial-gradient(#E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(#E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
     h1{
       padding-top: 10px;
         @include responsive-font(4vw, 20px, 50px, 30px);
@@ -379,7 +388,9 @@ a.boxclose{
 
 //********************TESTIMONIAL START********************//
 #testimonials{
-    background:#e1f5c4;
+  background:#e1f5c4;
+  background: -webkit-radial-gradient(#EDE574, #E1F5C4 );  /* Chrome 10-25, Safari 5.1-6 */
+  background: radial-gradient(#EDE574, #E1F5C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-bottom: 30px;
     h1{
       padding-top: 10px;
@@ -513,6 +524,12 @@ figure.quote blockquote:after {
 
 //********************CONTACT START********************//
 #contact{
+  // background: linear-gradient(to top,  #ede576, #e1f5c4 )
+  background: #e1f5c4;  /* fallback for old browsers */
+background: -webkit-radial-gradient(#E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+background: radial-gradient(#E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     padding:20px 0px 30px 0px;
     .details{
         .ppplogo{
@@ -521,11 +538,11 @@ figure.quote blockquote:after {
         p{
             margin-top:0;
             background: none;
-            color: #111;
+            color: #222;
         }
         a{
           text-decoration: none;
-          color: #111;
+          color: #222;
         }
     }
 }
@@ -533,7 +550,7 @@ figure.quote blockquote:after {
     fieldset{
         width: 80vw;
         margin:20px auto;
-        border:2px solid #111;
+        border:2px solid #222;
      legend{
           font-size: 40px;
           font-weight: 500;
@@ -597,14 +614,14 @@ figure.quote blockquote:after {
         @include responsive-font(4vw, 20px, 30px, 20px);
         display: inline-block;
         margin:5px;
-        border-bottom:1px solid black;
+        border-bottom:1px solid #222;
     }
     ul{
         @include responsive-font(3vw, 13px, 15px, 15px);
         list-style-type: none;
         padding:0;
         margin:0;
-        border-left: 1px solid black;
+        border-left: 1px solid #222;
         li{
             a{
                 padding:10px;
@@ -659,8 +676,9 @@ figure.quote blockquote:after {
 
 @media screen and (min-width: 700px){
     .box{
-      left:26%;
-      right:26%;
+      left:10%;
+      right:10%;
+      top:85%;
     }
     .menu-toggle { display: none; }
     .nav2{
@@ -675,7 +693,7 @@ figure.quote blockquote:after {
     }
      a{
       background: none;
-      color: #111;
+      color: #222;
       height: 10%;
     }
      a:hover,  nav a:focus {
@@ -683,7 +701,7 @@ figure.quote blockquote:after {
       }
     }
     #hero{
-        background:url("images/hero/hero-image-medium.jpg") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+        background:url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267378/Hero%20Images%20(no%20bg)/hero-image-mediumnew-nobg.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
         background-size: contain;
         width: 100%;
         height: 0;
@@ -755,7 +773,7 @@ figure.quote blockquote:after {
     .areas-covered{
       padding:0px 10% 20px 10%;
       img{
-        border: 4px solid black;
+        border: 4px solid #222;
         border-radius: 10px;
       }
     }
@@ -789,8 +807,8 @@ figure.quote blockquote:after {
 
 @media screen and (min-width: 1200px){
   .box{
-    left:35%;
-    right:35%;
+    left:20%;
+    right:20%;
   }
     #experience{
         background-position: 0;
@@ -822,7 +840,7 @@ figure.quote blockquote:after {
 
 @media screen and (min-width: 1400px){
   #hero{
-    background:url("images/hero/hero-image-wide.jpg") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background:url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267387/Hero%20Images%20(no%20bg)/Hero-image-wide.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
