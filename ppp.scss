@@ -121,7 +121,7 @@ body{
 #hero{
     display:table; //for some reason Firefox and Edge need this to show the background image?!
     position: relative;
-    background:url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto:best/v1541267661/Hero%20Images%20(no%20bg)/Hero-image-mobile.png") no-repeat, linear-gradient(to right, #E1F5C4, #EDE574);
+    background:url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547375025/Hero%20Images%20(no%20bg)/Hero-image-mobile.png") no-repeat, linear-gradient(to right, rgb(198, 223, 161), #EDE574);
     background-size: contain;
     width: 100%;
     height: 0;
