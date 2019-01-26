@@ -19,7 +19,7 @@
 }
 
 body{
-    background:linear-gradient(rgba(141,153,174,0.5), rgba(141,153,174,0.4)), url(../images/background-boarding-mobile.jpg) no-repeat;
+    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.3)), url(../images/background-boarding-mobile.jpg) no-repeat;
     background-size: 500px;
     font-family: Arial;
     margin:0;
@@ -225,7 +225,8 @@ body{
 
 @media screen and (min-width: 500px){
   body{
-    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)), url(../images/background-boarding-mobile.jpg) no-repeat;
+    background:url(../images/background-boarding-mobile.jpg) no-repeat;
+    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4));
     background-size: cover;
   }
   .header{
