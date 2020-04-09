@@ -62,7 +62,7 @@ body{
 }
 
 .list{
-    width: 80%;
+    width: 95%;
     margin:0 auto;
     @include responsive-font(3vw, 10px, 50px, 30px);
   ul{
@@ -225,7 +225,7 @@ body{
 
 @media screen and (min-width: 500px){
   body{
-    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4))url(../images/background-boarding-mobile.jpg) no-repeat;
+    background:linear-gradient(rgba(141,153,174,0.6), rgba(141,153,174,0.4)) url(../images/background-boarding-mobile.jpg) no-repeat;
     background-size: cover;
   }
   .header{

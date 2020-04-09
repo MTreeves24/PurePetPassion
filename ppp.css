@@ -36,7 +36,9 @@ body {
     padding: 10px;
     text-decoration: none;
     background: rgba(20, 20, 20, 0.9); }
-  .nav a:hover, .nav2 a:hover, .nav nav a:focus, .nav2 nav a:focus {
+  .nav a:hover, .nav2 a:hover,
+  .nav nav a:focus,
+  .nav2 nav a:focus {
     color: #ede576; }
 
 .nav2 {
@@ -53,8 +55,10 @@ body {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 0px 0px 0px 10px; }
 
-.hamburger, .hamburger::before, .hamburger::after {
-  content: '';
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
   display: block;
   background: #222;
   height: 3px;
@@ -89,7 +93,7 @@ body {
 #hero {
   display: table;
   position: relative;
-  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547375025/Hero%20Images%20(no%20bg)/Hero-image-mobile.png") no-repeat, linear-gradient(to right, #c6dfa1, #EDE574);
+  background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1547375025/Hero%20Images%20(no%20bg)/Hero-image-mobile.png") no-repeat, linear-gradient(to right, #c6dfa1, #ede574);
   background-size: contain;
   width: 100%;
   height: 0;
@@ -120,7 +124,7 @@ body {
   left: 5%;
   right: 5%;
   background-color: #fff;
-  color: #7F7F7F;
+  color: #7f7f7f;
   padding: 10px 20px;
   border: 2px solid #ccc;
   -moz-border-radius: 10px;
@@ -131,11 +135,11 @@ body {
   z-index: 101; }
   .box h1 {
     font-size: 20px;
-    border-bottom: 1px dashed #7F7F7F;
+    border-bottom: 1px dashed #7f7f7f;
     margin: -20px -20px 0px -20px;
     padding: 10px;
-    background-color: #FFEFEF;
-    color: #EF7777;
+    background-color: #ffefef;
+    color: #ef7777;
     -moz-border-radius: 20px 20px 0px 0px;
     -webkit-border-top-left-radius: 20px;
     -webkit-border-top-right-radius: 20px;
@@ -153,9 +157,9 @@ a.boxclose {
   margin-right: -30px;
   cursor: pointer;
   color: #fff;
-  border: 1px solid #AEAEAE;
+  border: 1px solid #aeaeae;
   border-radius: 30px;
-  background: #605F61;
+  background: #605f61;
   font-size: 31px;
   font-weight: bold;
   display: inline-block;
@@ -166,7 +170,7 @@ a.boxclose {
   content: "\00d7"; }
 
 #about {
-  background: radial-gradient(#E1F5C4, #EDE574);
+  background: radial-gradient(#e1f5c4, #ede574);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -236,9 +240,9 @@ a.boxclose {
   padding: 30px 0px 0px 0px;
   background: #e1f5c4;
   /* fallback for old browsers */
-  background: -webkit-radial-gradient(#E1F5C4, #EDE574);
+  background: -webkit-radial-gradient(#e1f5c4, #ede574);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: radial-gradient(#EDE574, #E1F5C4);
+  background: radial-gradient(#ede574, #e1f5c4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #services h1 {
     font-size: 30px;
@@ -297,9 +301,9 @@ a.boxclose {
 #gallery {
   background: #e1f5c4;
   /* fallback for old browsers */
-  background: -webkit-radial-gradient(#E1F5C4, #EDE574);
+  background: -webkit-radial-gradient(#e1f5c4, #ede574);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: radial-gradient(#E1F5C4, #EDE574);
+  background: radial-gradient(#e1f5c4, #ede574);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   #gallery h1 {
     padding-top: 10px;
@@ -318,9 +322,9 @@ a.boxclose {
 
 #testimonials {
   background: #e1f5c4;
-  background: -webkit-radial-gradient(#EDE574, #E1F5C4);
+  background: -webkit-radial-gradient(#ede574, #e1f5c4);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: radial-gradient(#EDE574, #E1F5C4);
+  background: radial-gradient(#ede574, #e1f5c4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-bottom: 30px; }
   #testimonials h1 {
@@ -340,7 +344,7 @@ a.boxclose {
   justify-content: center; }
 
 figure.quote {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   flex: 1 1 10%;
   position: relative;
   overflow: hidden;
@@ -392,7 +396,7 @@ figure.quote {
 
 figure.quote blockquote:before,
 figure.quote blockquote:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   content: "\201C";
   position: absolute;
   font-size: 50px;
@@ -415,7 +419,7 @@ figure.quote blockquote:after {
   opacity: 0;
   max-height: 0;
   font-size: 0;
-  transition: .25s ease; }
+  transition: 0.25s ease; }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
@@ -423,27 +427,27 @@ figure.quote blockquote:after {
   max-height: 999em; }
 
 .read-more-state ~ .read-more-trigger:before {
-  content: 'Show more'; }
+  content: "Show more"; }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Show less'; }
+  content: "Show less"; }
 
 .read-more-trigger {
   cursor: pointer;
   display: inline-block;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   color: #666;
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 2;
   border: 1px solid #ddd;
-  border-radius: .25em; }
+  border-radius: 0.25em; }
 
 #contact {
   background: #e1f5c4;
   /* fallback for old browsers */
-  background: -webkit-radial-gradient(#E1F5C4, #EDE574);
+  background: -webkit-radial-gradient(#e1f5c4, #ede574);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: radial-gradient(#E1F5C4, #EDE574);
+  background: radial-gradient(#e1f5c4, #ede574);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px 0px 30px 0px; }
   #contact .details .ppplogo {
@@ -589,11 +593,12 @@ figure.quote blockquote:after {
       background: none;
       color: #222;
       height: 10%; }
-    .nav2 a:hover, .nav2 nav a:focus {
+    .nav2 a:hover,
+    .nav2 nav a:focus {
       color: #444; }
 
   #hero {
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267378/Hero%20Images%20(no%20bg)/hero-image-mediumnew-nobg.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267378/Hero%20Images%20(no%20bg)/hero-image-mediumnew-nobg.png") no-repeat, radial-gradient(#e1f5c4, #ede574);
     background-size: contain;
     width: 100%;
     height: 0;
@@ -702,7 +707,7 @@ figure.quote blockquote:after {
     padding: 10px 150px 50px 150px; } }
 @media screen and (min-width: 1400px) {
   #hero {
-    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267387/Hero%20Images%20(no%20bg)/Hero-image-wide.png") no-repeat, radial-gradient(#E1F5C4, #EDE574);
+    background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267387/Hero%20Images%20(no%20bg)/Hero-image-wide.png") no-repeat, radial-gradient(#e1f5c4, #ede574);
     background-size: contain;
     width: 100%;
     height: 0;
