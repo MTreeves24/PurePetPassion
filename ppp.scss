@@ -235,6 +235,28 @@ a.boxclose {
 
 //********************HERO END********************//
 
+//*****
+
+#business-closed {
+  font-size: 1.4em;
+  background: radial-gradient(#e1f5c4, #ede574);
+  border-bottom: 10px solid white;
+  display: grid;
+  justify-content: center;
+  padding: 0px 20px;
+  img {
+    justify-self: center;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+  }
+  a {
+    font-size: 2em;
+  }
+}
+
 //********************ABOUT START********************//
 #about {
   background: radial-gradient(#e1f5c4, #ede574);
@@ -735,6 +757,7 @@ figure.quote blockquote:after {
       color: #444;
     }
   }
+
   #hero {
     background: url("https://res.cloudinary.com/mtreeves24/image/upload/f_auto,q_auto/v1541267378/Hero%20Images%20(no%20bg)/hero-image-mediumnew-nobg.png")
         no-repeat,
@@ -850,6 +873,11 @@ figure.quote blockquote:after {
   .box {
     left: 20%;
     right: 20%;
+  }
+  #business-closed {
+    padding: 0px 150px;
+    img {
+    }
   }
   #experience {
     background-position: 0;
