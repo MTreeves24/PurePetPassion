@@ -184,7 +184,9 @@ a.boxclose {
     border: 5px solid white;
     margin-bottom: 20px; }
   #business-closed a {
-    font-size: 2em; }
+    font-size: 1.6em; }
+    #business-closed a:hover {
+      outline: 0.5px solid black; }
 
 #about {
   background: radial-gradient(#e1f5c4, #ede574);
